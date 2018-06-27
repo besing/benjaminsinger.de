@@ -132,17 +132,21 @@ body {
 		bottom: 0;
 		padding: 10vw;
 		background: rgba(0, 0, 0, 0.9);
-		// width: 100vh;
-		// height: 100vh;
 		color: #ccc;
+		overflow: auto;
 
 		h2 {
 			margin-bottom: 1em;
 		}
 
+		h3 {
+			margin-top: 2em;
+		}
+
 		p {
 			font-size: 0.8em;
 			line-height: 1.7em;
+			margin-bottom: 1em;
 		}
 
 		/* Closing Icon */
