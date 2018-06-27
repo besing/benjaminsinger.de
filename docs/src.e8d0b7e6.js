@@ -3,4 +3,4 @@ parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRe
 },{"./fonts/Roboto-Regular.ttf":[["Roboto-Regular.af6d0ccf.ttf",28],28],"./fonts/Roboto-Bold.ttf":[["Roboto-Bold.81a9c882.ttf",29],29]}],8:[function(require,module,exports) {
 "use strict";function e(){var e=document.getElementById("imprint-section");e.style.display="block",e.innerHTML=n;var i=document.getElementById("close-click");function s(){e.style.display="none"}e.addEventListener("click",s),i.addEventListener("click",s)}require("./style.scss"),document.getElementById("imprint-link").addEventListener("click",e);var n='<div class="imprint-content"><h2>Impressum</h2><p>Benjamin Singer<br />Hartwig-Hesse-Str. 38<br />20257 Hamburg</p><p>mail@benjaminsinger.de<br /></p></div><div class="close-section"><a id="close-click" href="#"><span class="close"></span></a></div>';
 },{"./style.scss":22}]},{},[8], null)
-//# sourceMappingURL=src.6d5965f6.map
+//# sourceMappingURL=src.e8d0b7e6.map
