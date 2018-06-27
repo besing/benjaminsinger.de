@@ -1,7 +1,7 @@
 {
   "name": "benjaminsinger.de",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend Developer based in Hamburg. Personal Website.",
   "main": "index.js",
   "scripts": {
     "prebuild": "find docs/. -type f ! -name 'CNAME' -delete",
