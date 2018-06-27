@@ -1,5 +1,3 @@
-'use strict';
-
 import './style.scss';
 
 document.getElementById('imprint-link').addEventListener('click', showImprint);
