@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+	background: rgb(221, 218, 210);
+	color: #444;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	ul,
+	li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.wrapper {
+		border-top: 10px solid rgb(179, 26, 26);
+		border-right: 10px solid rgb(179, 26, 26);
+		border-left: 10px solid rgb(141, 23, 23);
+		border-bottom: 10px solid rgb(141, 23, 23);
+		min-height: calc(100vh - 80px);
+		padding: 10px;
+	}
+
+	.content {
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: center;
+		min-height: calc(100vh - 100px);
+	}
+
+	.avatar {
+		margin-bottom: 40px;
+
+		img {
+			width: 200px;
+			height: auto;
+			clip-path: circle(50% at center);
+		}
+	}
+
+	.name-box {
+		text-align: center;
+		flex-basis: 100%;
+
+		h1 {
+			margin: 0 0 0.3em;
+			font-size: 2em;
+			font-weight: 700;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			font-weight: normal;
+			margin: 0 0 1.5em;
+
+			.living-location {
+				vertical-align: inherit;
+				font-size: 0.7em;
+				margin-left: 2px;
+			}
+		}
+
+		h3 {
+			font-weight: 700;
+			font-size: 1em;
+
+			span {
+				display: block;
+				margin-bottom: 3px;
+			}
+		}
+	}
+
+	.social-icons {
+		margin-top: 3em;
+
+		a {
+			display: block;
+			margin-bottom: 0.6em;
+
+			img {
+				padding-right: 5px;
+			}
+
+			span {
+				position: relative;
+				bottom: 5px;
+			}
+		}
+	}
+
+	#imprint-link {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-basis: 100%;
+		font-size: 0.8em;
+		height: 20px;
+	}
+
+	#imprint-section {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 10vw;
+		background: rgba(0, 0, 0, 0.9);
+		// width: 100vh;
+		// height: 100vh;
+		color: #ccc;
+
+		h2 {
+			margin-bottom: 1em;
+		}
+
+		p {
+			font-size: 0.8em;
+			line-height: 1.7em;
+		}
+
+		/* Closing Icon */
+
+		.close-section {
+			position: absolute;
+			top: 10vw;
+			right: 10vw;
+
+			.close {
+				position: relative;
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				overflow: hidden;
+
+				&::before,
+				&::after {
+					content: '';
+					position: absolute;
+					height: 8px;
+					margin-top: -4px;
+					width: 100%;
+					top: 50%;
+					left: 0;
+					background: rgb(221, 218, 210);
+				}
+
+				&::before {
+					transform: rotate(45deg);
+				}
+
+				&::after {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
