@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'Roboto';
-	src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+	font-family: "Roboto";
+	src: url("./fonts/Roboto-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Roboto';
-	src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+	font-family: "Roboto";
+	src: url("./fonts/Roboto-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -17,10 +17,9 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	box-sizing: border-box;
-	background: rgb(221, 218, 210);
 	color: #444;
 
 	a {
@@ -36,12 +35,14 @@ body {
 	}
 
 	.wrapper {
-		border-top: 10px solid rgb(179, 26, 26);
-		border-right: 10px solid rgb(179, 26, 26);
-		border-left: 10px solid rgb(141, 23, 23);
-		border-bottom: 10px solid rgb(141, 23, 23);
-		min-height: calc(100vh - 80px);
+		background: linear-gradient(rgb(179, 26, 26), rgb(141, 23, 23));
+		padding: 10vw;
+	}
+
+	.inner-wrapper {
+		box-shadow: 4px 4px 11px 4px rgba(0, 0, 0, 0.2);
 		padding: 10px;
+		background: rgb(221, 218, 210);
 	}
 
 	.content {
@@ -50,7 +51,7 @@ body {
 		justify-content: center;
 		flex-wrap: wrap;
 		align-content: center;
-		min-height: calc(100vh - 100px);
+		min-height: calc(100vh - 20vw - 40px - 20px - 20px);
 	}
 
 	.avatar {
@@ -165,7 +166,7 @@ body {
 
 				&::before,
 				&::after {
-					content: '';
+					content: "";
 					position: absolute;
 					height: 8px;
 					margin-top: -4px;
